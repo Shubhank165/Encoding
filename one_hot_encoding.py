@@ -9,7 +9,7 @@ object_cols = [col for col in df.columns if df[col].dtype=='object']
     
 #One-Hot Encoding
 for object_col in object_cols:
-    #Makes a list of all possible value of a categorical variable and sorts them to assign a number
+    #Makes a list of all possible value of a categorical variable (object_col)
     items = list(set(df[object_col]))
     cols = {}
     for item in items:
